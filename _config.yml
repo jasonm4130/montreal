@@ -1,0 +1,15 @@
+name: Jason M Design - We Do Web
+markdown: kramdown
+highlighter: pygments # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+permalink: /blog/:title/
+url: https://lanxmedia.com
+collections:
+  categories:
+    output: true
+    permalink: /:title/
+  individual:
+    output: true
+    permalink: /:category/:title/
+plugins:
+  - jekyll-sitemap

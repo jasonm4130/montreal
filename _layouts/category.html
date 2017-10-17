@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	{% if page.keywords %}
+	<meta content="{{page.keywords | join: ', '}}" name="keywords">
+	{% endif %}
+	{% if page.meta %}
+	<meta name="description" content="{{page.meta}}" />
+	{% endif %}
+
+	<title>{{page.title}}</title>
+	{% include head.html %}
+</head>
+
+<body data-offset="100" data-spy="scroll" data-target="#main-nav-collapse">
+	{{ content }}
+	<!-- Scripts -->
+	{% include scripts.html %}
+</body>
+</html>
