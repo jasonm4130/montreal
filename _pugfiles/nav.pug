@@ -1,0 +1,19 @@
+nav.navbar.navbar-collapsed-xs.navbar-dark
+    .container
+        a.navbar-brand(href='#')
+            img.img-responsive(src='assets/img/logo.png')
+        .toggler-container(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            button.navbar-toggler
+                span.line.line-1
+                span.line.line-2
+                span.line.line-3
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.ml-auto
+                li.nav-item.active
+                    a.nav-link(href='#')
+                        | Home 
+                    span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href='#') Link
+                li.nav-item
+                    a.nav-link.disabled(href='#') Disabled

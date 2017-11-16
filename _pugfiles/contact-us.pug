@@ -1,0 +1,27 @@
+section.contact-us
+    .container
+        h3.title Contact Us...
+        p.col-10 Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+        form.contact-form.col-sm-10.offset-sm-1
+            .row
+                .col-sm-6
+                    input.name(type="text", name="name", placeholder="Name")
+                .col-sm-6
+                    input.email(type="email", name="email", placeholder="Email")
+                .col-12
+                    input.subject(type="text", name="subject", placeholder="Subject")
+                .col-12
+                    textarea.message(name="message", placeholder="Message...", rows="5")
+                submit.btn.btn-cta.mx-auto Send
+    .contact-info
+        .container
+            .row
+                .col
+                    .icon
+                        span.pe-7s-comment
+                    a(href="tel:123456789") 04 294 860
+                .col
+                    .icon
+                        span.pe-7s-mail-open-file
+                    a(href="mailto:admin@1234.com") admin@1234.com
+                .col

@@ -111,7 +111,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['assets/js/jquery/*.js', 'assets/js/popper/*.js', 'assets/js/bootstrap/*.js', 'assets/js/plugins/*.js'])
+  return gulp.src(['assets/js/jquery/*.js', 'assets/js/popper/*.js', 'assets/js/bootstrap/*.js', 'assets/js/plugins/jquery.waypoints.min.js', 'assets/js/plugins/*.js'])
   .pipe(sourcemaps.init())
     .pipe(concat('scripts.js'))
     .pipe(sourcemaps.write())
@@ -138,7 +138,7 @@ gulp.task('image-min', function(){
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function() {
-    gulp.watch('assets/css/**/*.sass', ['sass']);
+    gulp.watch('assets/css/**/*.+(sass|css)', ['sass']);
     gulp.watch(['_pugfiles/**/*.pug'], ['pug']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/*.md', '_categories/**/*.md', '_individual/**/*.md'], ['jekyll-rebuild']);
     gulp.watch('assets/js/main.js', ['jekyll-rebuild']);
